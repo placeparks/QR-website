@@ -11,31 +11,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.react-datepicker__input-container input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
 
-.react-datepicker-wrapper {
-  width: 100%;
-}
 
-.react-datepicker {
-  font-size: 1em;
-}
-
-.react-datepicker__header {
-  background-color: #f0f0f0;
-  border-bottom: 1px solid #ccc;
-}
-
-.react-datepicker__current-month {
-  font-weight: bold;
-}
-
-.react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range {
-  background-color: #4CAF50;
-  color: white;
-}

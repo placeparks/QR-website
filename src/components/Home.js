@@ -48,6 +48,7 @@ import {
                 rounded={"medium"}
                 color={"white"}
                 _hover={{  bg: "whiteAlpha.500" }}
+                as="a" href={"#services"}
               >
                 SHOW ME MORE
               </Button>

@@ -57,7 +57,7 @@ export default function Contact() {
     setIsLoading(true);
 
     emailjs.sendForm('service_4r4xx3e', 'template_ob8ypxg', form.current, 't_NkU5u7x-KOk0AID')
-      .then((result) => {
+    .then((result) => {
         console.log(result.text);
         alert('Email successfully sent!');
         setName('');
@@ -150,36 +150,37 @@ export default function Contact() {
                 <WrapItem data-aos="fade-up" data-aos-anchor-placement="top-bottom"  data-aos-duration="2000">
                   <Box bg="#000" borderRadius="lg">
                     <Box m={10} p={8} color="white">
-                      <form onSubmit={sendEmail} ref={form}>
-                        <VStack spacing={5}>
-                          <FormControl id="name" value={name}>
-                            <FormLabel>Your Name</FormLabel>
-                            <InputGroup borderColor="#E0E1E7">
-                              <InputLeftElement pointerEvents="none">
-                                <BsPerson color="gray.800" />
-                              </InputLeftElement>
-                              <Input type="text" size="lg" value={name} onChange={e => setName(e.target.value)} />
-                            </InputGroup>
-                          </FormControl>
-                          <FormControl id="email" vale={email}>
-                            <FormLabel>Mail</FormLabel>
-                            <InputGroup borderColor="#E0E1E7">
-                              <InputLeftElement pointerEvents="none">
-                                <MdOutlineEmail color="gray.800" />
-                              </InputLeftElement>
-                              <Input type="text" size="lg" value={email} onChange={e => setEmail(e.target.value)} />
-                            </InputGroup>
-                          </FormControl>
-                          <FormControl id="message" value={message}>
-                            <FormLabel>Message</FormLabel>
-                            <Textarea
-                              value={message}
-                              onChange={e => setMessage(e.target.value)}
-                              borderColor="gray.300"
-                              _hover={{ borderRadius: "gray.300" }}
-                              placeholder="message"
-                            />
-                          </FormControl>
+                    <form onSubmit={sendEmail} ref={form}>
+      <VStack spacing={5}>
+        <FormControl id="user_name">
+          <FormLabel>Your Name</FormLabel>
+          <InputGroup borderColor="#E0E1E7">
+            <InputLeftElement pointerEvents="none">
+              <BsPerson color="gray.800" />
+            </InputLeftElement>
+            <Input type="text" size="lg" name='from_name' value={name} onChange={e => setName(e.target.value)} />
+          </InputGroup>
+        </FormControl>
+        <FormControl id="email">
+          <FormLabel>Mail</FormLabel>
+          <InputGroup borderColor="#E0E1E7">
+            <InputLeftElement pointerEvents="none">
+              <MdOutlineEmail color="gray.800" />
+            </InputLeftElement>
+            <Input type="email" size="lg" name='from_email' value={email} onChange={e => setEmail(e.target.value)} />
+          </InputGroup>
+        </FormControl>
+        <FormControl id="message">
+          <FormLabel>Message</FormLabel>
+          <Textarea
+            value={message}
+            name='message'
+            onChange={e => setMessage(e.target.value)}
+            borderColor="gray.300"
+            _hover={{ borderRadius: "gray.300" }}
+            placeholder="message"
+          />
+        </FormControl>
                           <FormControl id="submit" float="right">
       <Button
         type="submit"
