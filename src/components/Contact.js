@@ -193,16 +193,6 @@ export default function Contact() {
         {isLoading ? 'Sending...' : 'Send Message'}
       </Button>
     </FormControl>
-    // Rest of your code
-  )
-}
-This code now includes a loading state that disables the button and changes the button text while the email is being sent. It also includes alerts for successful and unsuccessful email sends, and for form validation.
-
-
-
-
-
-
                         </VStack>
                       </form>
                     </Box>

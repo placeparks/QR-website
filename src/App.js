@@ -7,7 +7,6 @@ import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Footer1 from './components/Footer1';
-import Schedule from './components/Schedule';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 const App = () => {
@@ -26,7 +25,6 @@ const App = () => {
             <Footer/>
           </div>
         } />
-        <Route path="/schedule" element={<Schedule />} />
       </Routes>
     </Router>
   );

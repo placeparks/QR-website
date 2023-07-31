@@ -6,17 +6,12 @@ import {
     Text,
     useColorModeValue, 
     Image,
-    Button,
     Flex,
-    Link as ChakraLink
   } from "@chakra-ui/react"
   import logo from '../images/logo.png';
   import {
-    MdPhone,
     MdEmail,
     MdLocationOn,
-    MdFacebook,
-    MdOutlineEmail
   } from "react-icons/md"
 
 const ListHeader = ({ children }) => {
