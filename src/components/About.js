@@ -11,7 +11,7 @@ import {
   createIcon,
   useColorModeValue
 } from "@chakra-ui/react"
-import Stayconnected from '../images/Stay Connected and Protected.mov';
+import Stayconnected from '../images/Stay Connected and Protected.mp4';
 
 
 export default function CallToActionWithVideo() {
@@ -110,14 +110,17 @@ At QR Tracker, your safety is our top priority. We firmly believe in the power o
               top={"50%"}
               transform={"translateX(-50%) translateY(-50%)"}
             />
-            <video
-              alt={"Hero Image"}
-              fit={"cover"}
-              align={"center"}
-              w={"100%"}
-              h={"100%"}
-              src={Stayconnected}
-            />
+         <video
+  alt={"Hero Image"}
+  fit={"cover"}
+  align={"center"}
+  w={"100%"}
+  h={"100%"}
+  src={Stayconnected}
+  controls
+  muted={false}
+/>
+
           </Box>
         </Flex>
       </Stack>
