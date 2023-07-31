@@ -6,10 +6,8 @@ import {
   Heading,
   Text,
   Button,
-  Icon,
   IconButton,
   createIcon,
-  useColorModeValue
 } from "@chakra-ui/react"
 import Stayconnected from '../images/Stay Connected and Protected.mp4';
 
