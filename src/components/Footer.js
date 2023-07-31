@@ -1,12 +1,10 @@
 "use client"
 import {
   Box,
-  chakra,
   Container,
   Stack,
   Text,
-  useColorModeValue,
-  VisuallyHidden
+  useColorModeValue
 } from "@chakra-ui/react"
 
 
