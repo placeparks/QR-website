@@ -158,7 +158,7 @@ export default function Contact() {
             <InputLeftElement pointerEvents="none">
               <BsPerson color="gray.800" />
             </InputLeftElement>
-            <Input type="text" size="lg" name='from_name' value={name} onChange={e => setName(e.target.value)} />
+            <Input type="text" size="lg" name='user_name' value={name} onChange={e => setName(e.target.value)} />
           </InputGroup>
         </FormControl>
         <FormControl id="email">
@@ -167,7 +167,7 @@ export default function Contact() {
             <InputLeftElement pointerEvents="none">
               <MdOutlineEmail color="gray.800" />
             </InputLeftElement>
-            <Input type="email" size="lg" name='from_email' value={email} onChange={e => setEmail(e.target.value)} />
+            <Input type="email" size="lg" name='user_email' value={email} onChange={e => setEmail(e.target.value)} />
           </InputGroup>
         </FormControl>
         <FormControl id="message">
